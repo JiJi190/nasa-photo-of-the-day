@@ -14,7 +14,7 @@ const NasaPic = () => {
     .catch(err => {
       console.log(err);
     });
-  })}
+  }, [])}
 
 
   return (
