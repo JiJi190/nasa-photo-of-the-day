@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  border: 2px solid gray;
+  border-radius: 12px;
+  padding: 0.5%;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
 }
 
 .App-logo {
@@ -31,3 +37,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+
