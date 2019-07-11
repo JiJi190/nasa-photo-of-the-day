@@ -5,7 +5,7 @@ import "./App.css";
 const NasaPic = () => {
   const [photos, setPhotos] = useState([]);
 
-  {useEffect(() => {
+  useEffect(() => {
     axios
     .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14")
     .then(res => {
@@ -14,7 +14,7 @@ const NasaPic = () => {
     .catch(err => {
       console.log(err);
     });
-  }, [])}
+  }, [])
 
 
   return (
