@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import "./App.css";
+import "semantic-ui-css/semantic.min.css"
+import { Segment } from 'semantic-ui-react'
+
 
 const NasaPic = () => {
   const [photos, setPhotos] = useState([]);
@@ -17,12 +20,15 @@ const NasaPic = () => {
   }, [])
 
 
+
   return (
     <div className="App">
       <h1>Photos of the Day!</h1>
       <h2>{photos.title}</h2>
       <img src={photos.url} alt="nasa pic" />
-      <p>{photos.explanation}</p>
+      {/* <p>{photos.explanation}</p> */}
+      <Segment raised>{photos.explanation}</Segment>
+
     </div>
   );
 }
